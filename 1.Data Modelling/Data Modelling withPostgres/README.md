@@ -36,8 +36,7 @@ time
 * hour, day, week, month, year, weekday <br>
 
 
-The songplays table is the core of this schema, is it our fact table and <br>
-it contains foreign keys to four tables;
+The songplays table is the core of this schema, is it our fact table and it contains foreign keys to four tables;
 * start_time REFERENCES time(start_time)
 * user_id REFERENCES time(start_time)
 * song_id REFERENCES songs(song_id)
@@ -52,8 +51,7 @@ First of all, install PostgresSQL (pgAdmin4) <br>
 Install Python [Python](https://www.python.org/downloads/) <br>
 
 <b> Note: </b><br>
-Create custom user called `student` with password `student`  <br>
-and create a database called `sparkifydb`
+Create custom user called `student` with password `student` and create a database called `sparkifydb`
 
 <I> Firstly we need to run this which will create our tables </I> <br>
 `` python create_tables.py`` <br>
@@ -73,8 +71,8 @@ Resource is a folder (we can download the source od JSON file directly from the 
 * <b> etl.ipynb </b> - It is a notebook that helps to know step by step what etl.py does
 * <b> test.ipynb </b> - It is a notebook that helps to know if tables are created and data are ingested correctly 
 * <b> create_tables.py </b> - This script will drop old tables (if exist) ad re-create new tables
-* <b> etl.py </b> - This script will read JSON every file contained in /data folder, parse them, <br> build relations though logical process and ingest data 
-* <b> sql_queries.py </b> - This file contains variables with SQL statement in String formats, <br> partitioned by CREATE, DROP, INSERT statements plus a FIND query
+* <b> etl.py </b> - This script will read JSON every file contained in /data folder, parse them, build relations though logical process and ingest data 
+* <b> sql_queries.py </b> - This file contains variables with SQL statement in String formats, partitioned by CREATE, DROP, INSERT statements plus a FIND query
 * <b> README.md provides discussion on your project.
 
 ----------------------------
