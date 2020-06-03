@@ -11,12 +11,12 @@
 #### Schema definition
 This is the schema of the database
 
-Fact table: songplays
+Fact table: 
+songplays
 * songplay_id: primary key <br>
 * fields: songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent<br>
 
 Dimensions tables:
-
 users
 * user_id: primary key<br>
 * Fields: first_name, last_name, gender, level <br>
