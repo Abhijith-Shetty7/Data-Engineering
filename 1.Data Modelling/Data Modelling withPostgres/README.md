@@ -71,12 +71,10 @@ Resource is a folder (we can download the source od JSON file directly from the 
   * <b> /song_data </b> -  Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID
 * <b> /imgs </b> - Simply a folder with images that are used in this ``md``
 * <b> etl.ipynb </b> - It is a notebook that helps to know step by step what etl.py does
-* <b> test.ipynb </b> - It is a notebook that helps to know if tables
-  <br> are created and data are ingested correctly 
+* <b> test.ipynb </b> - It is a notebook that helps to know if tables are created and data are ingested correctly 
 * <b> create_tables.py </b> - This script will drop old tables (if exist) ad re-create new tables
 * <b> etl.py </b> - This script will read JSON every file contained in /data folder, parse them, <br> build relations though logical process and ingest data 
 * <b> sql_queries.py </b> - This file contains variables with SQL statement in String formats, <br> partitioned by CREATE, DROP, INSERT statements plus a FIND query
 * <b> README.md provides discussion on your project.
-
 
 ----------------------------
